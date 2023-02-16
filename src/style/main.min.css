@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap");
+:root {
+  --content-width: 1040px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) *2));
+  --font-size: 16px;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semiBold: 600;
+  --font-bold: 700;
+  --rounded-sm: 5px;
+  --rounded-md: 10px;
+  --rounded-xl: 15px;
+  --rounded-xxl: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  font-size: var(--font-size);
+  font-weight: var(--font-regular);
+  font-family: "Montserrat", sans-serif;
+  color: #FEFAE0;
+  background-color: #283618;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1340px;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+.header__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+.header__logo {
+  height: 80px;
+}
+.header__list {
+  display: flex;
+  font-size: 24px;
+}
+.header__item:not(:last-child) {
+  margin-right: 45px;
+}
+.header__phone {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.main {
+  background-image: url(../../src/assets/img/Main.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20%;
+}
+.main__title {
+  font-size: 54px;
+  font-weight: bold;
+}
+.main__sub-title {
+  padding-top: 18px;
+  padding-bottom: 75px;
+  font-size: 36px;
+  font-weight: 600;
+}
+.more-btn {
+  padding: 12px 45px;
+  background-color: #FEFAE0;
+  border-radius: 20px;
+  font-size: 24px;
+  color: #283618;
+  font-weight: 600;
+}
+
+.about__container {
+  text-align: center;
+  max-height: 442px;
+}
+.about__title {
+  padding: 60px;
+  font-size: 54px;
+  font-weight: bold;
+}
+.about__text {
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 125px;
+}
+
+.menu {
+  background-image: url(../../src/assets/img/Food.png);
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu__container {
+  text-align: center;
+}
+.menu__title {
+  padding: 60px;
+  font-size: 54px;
+  font-weight: bold;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.menu__item:nth-child(1) {
+  background-color: #BC6C25;
+  width: 246px;
+  height: 246px;
+  border-radius: 50%;
+  padding: 30px 70px;
+}
+.menu__item:nth-child(2) {
+  background-color: #BC6C25;
+  width: 246px;
+  height: 246px;
+  border-radius: 50%;
+  padding: 60px 67px;
+}
+.menu__item:nth-child(3) {
+  background-color: #BC6C25;
+  width: 246px;
+  height: 246px;
+  border-radius: 50%;
+  padding: 45px 60px;
+}
+.menu__icon:nth-child(2) {
+  height: 200px;
+}
+
+.popular__title {
+  font-size: 54px;
+  font-weight: bold;
+  padding: 60px 0;
+  text-align: center;
+}
+.popular__card:nth-child(2) {
+  margin-bottom: 150px;
+}
+.popular__card:nth-child(3) {
+  margin-bottom: 150px;
+}
+.popular__card:nth-child(4) {
+  margin-bottom: 150px;
+}
+
+.card__inner {
+  display: flex;
+}
+.card__item:not(:nth-last-child(even)) {
+  padding-left: 250px;
+}
+.card__item:nth-child(1) {
+  padding-right: 200px;
+}
+.card__title {
+  padding: 25px 0;
+  font-size: 34px;
+  font-weight: bold;
+}
+.card__sub-title {
+  padding-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.card__btn {
+  max-width: 235px;
+  padding: 12px 45px;
+  background-color: #BC6C25;
+  border-radius: 20px;
+  font-size: 24px;
+  color: #FEFAE0;
+  font-weight: 600;
+}
+
+.galery {
+  background-image: url(../../src/assets/img/bg__galery.png);
+  width: 100%;
+  height: 911px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.galery__title {
+  font-size: 54px;
+  font-weight: bold;
+  padding: 60px;
+  text-align: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 80%;
+}
+
+.swiper-button-prev {
+  background: #BC6C25;
+  padding: 45px;
+  border-radius: 75px;
+}
+.swiper-button-prev::after {
+  color: #FEFAE0;
+}
+
+.swiper-button-next {
+  background: #BC6C25;
+  padding: 45px;
+  border-radius: 75px;
+}
+.swiper-button-next::after {
+  color: #FEFAE0;
+}
+
+.section__body {
+  width: 100%;
+  height: 600px;
+}
+
+.promo__title {
+  font-size: 54px;
+  font-weight: bold;
+  padding: 60px;
+  text-align: center;
+}
+.promo__item {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 120px;
+}
+.map {
+  background-image: url(../../src/assets/img/map.png);
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.map__title {
+  font-size: 54px;
+  font-weight: bold;
+  padding: 60px;
+  text-align: center;
+}
+.map__item {
+  display: flex;
+  justify-content: flex-end;
+}
+.map__dot {
+  position: absolute;
+  left: 630px;
+  top: 5470px;
+  cursor: pointer;
+}
+.map__contact {
+  padding: 0 21px;
+  background-color: #283618;
+  border-radius: 20px;
+}
+.map__name {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 50px 0;
+}
+.map__adress {
+  max-width: 430px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.map__time {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.map__phone {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 41px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+}
+.footer__menu {
+  padding-top: 60px;
+}
+.footer__item {
+  font-size: 24px;
+  font-weight: 600;
+}
+.footer__item:not(:last-child) {
+  margin-right: 45px;
+}
+.footer__icon {
+  padding: 35px 0;
+  display: flex;
+  justify-content: center;
+}
+.footer__icon:not(:last-child) {
+  margin-right: 45px;
+}
+.footer__trip {
+  margin-right: 45px;
+}
+.footer__vk {
+  margin-right: 45px;
+}
+.bx {
+  font-size: 55px;
+}/*# sourceMappingURL=main.min.css.map */
